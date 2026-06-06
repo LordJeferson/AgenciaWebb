@@ -1,0 +1,599 @@
+@import url("./global.css");
+
+header {
+    display: flex;
+    /* Para que o grupo fique ao lado do outro */
+    justify-content: space-between;
+    /* Colocar nas extremidades */
+    align-items: center;
+    /* Centraliza na vertical */
+    padding: 30px;
+    /* Espaçamento interno */
+    border-bottom: 0.7px solid var(--color-gray-3);
+    /* Borda iferior */
+}
+
+.container-nav-header {
+    display: flex;
+    /* Para que o grupo fique ao lado do outro */
+    align-items: center;
+    /* Centraliza na vertical */
+    gap: 70px;
+    /* Distância entre os elementos */
+}
+
+.navigation-header ul {
+    /* Só vai estilizar as tags <UL> que etiverem dentro de navigation-header */
+    display: flex;
+    /* Para que o grupo fique ao lado do outro */
+    gap: 40px;
+    /* Distância entre os elementos */
+    list-style: none;
+    /* Remove a bolinha */
+}
+
+.navigation-header ul li a {
+    text-decoration: none;
+    /* Decoração do texto */
+    color: var(--color-black);
+    /* cor do texto */
+    font-family: var(--font-family-primary);
+    /* Família da fonte */
+}
+
+.navigation-header ul li .menu-active {
+    color: var(--color-blue);
+    /* Cor do texto */
+}
+
+.btn-header {
+    font-family: var(--font-family-primary);
+    /* Altera a fonte */
+    text-decoration: none;
+    /* Tira a decoração do texto */
+    background-color: var(--color-blue);
+    /* Cor de fundo */
+    color: var(--color-white);
+    /* Cor de texto */
+    border-radius: 10px;
+    /* Arredondamento das bordas */
+    padding: 10px 20px;
+    /* Espaçamento interno */
+    font-weight: var(--font-weight-button);
+    /* Espessura da fonte */
+}
+
+/* ---------------- MAIN ---------------- */
+main {
+    display: flex;
+    /* Para que o grupo fique ao lado do outro */
+    justify-content: center;
+    /* Centraliza na horizontal */
+    align-items: center;
+    /* Centraliza na vertical */
+    gap: 50px;
+    /* Distância entre os elementos */
+    background-color: var(--color-blue-10);
+    /* Cor de fundo */
+    padding: 50px 0px;
+    /* Espaçamento interno */
+}
+
+.main-content {
+    display: flex;
+    /* Para habilitar o gap */
+    flex-direction: column;
+    /* Deixar em coluna */
+    gap: 30px;
+    /* Espaçamento entre os elementos */
+    width: 520px;
+    /* Largura do elemento */
+}
+
+.main-content h1 {
+    font-size: var(--font-size-h1);
+    /* Tamanho da fonte */
+    font-family: var(--font-family-primary);
+    /* Altera a fonte */
+    font-weight: var(--font-weight-h1);
+    /* Espessura da fonte */
+}
+
+.main-content h1 span {
+    color: var(--color-blue);
+    /* Alterar a cor do texto */
+}
+
+.main-content p {
+    font-family: var(--font-family-primary);
+    /* Altera a fonte */
+    color: var(--color-gray);
+    /* Altera a cor do texto */
+    line-height: 30px;
+    /* Distância entre as linhas */
+}
+
+.container-cta {
+    display: flex;
+    /* Para habilitar o gap */
+    gap: 10px;
+    /* Distância entre os elementos */
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 8px 55px;
+    /* Espaçamento interno */
+    border-radius: 10px;
+    /* Arredondamento da borda */
+    font-weight: var(--font-weight-button);
+    /* Espessura da fonte */
+    text-decoration: none;
+    /* Decoração do texto */
+    font-family: var(--font-family-primary);
+    /* Família da fonte */
+}
+
+.btn-primary {
+    background-color: var(--color-blue);
+    /* Cor de fundo */
+    color: var(--color-white);
+    /* Cor de texto */
+    transition: 0.3s;
+    /* Tempo de transição do elemento*/
+}
+
+.btn-primary:hover {
+    background-color: #005e89;
+}
+
+.btn-secondary {
+    background-color: var(--color-white);
+    /* Cor de fundo */
+    color: var(--color-blue);
+    /* Cor de texto */
+    border: 1px solid var(--color-blue);
+    /* Borda do elemento */
+    transition: 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #e6e6e6;
+}
+
+/* --------------- SERVICES ---------------   */
+
+.section-services {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    justify-content: center;
+    gap: 25px;
+    padding: 30px 0;
+    border-bottom: 0.7px solid var(--color-gray-3);
+}
+
+.container-item-services {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.container-item-services h2 {
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-h4);
+    font-size: var(--font-size-h4);
+}
+
+.container-item-services p {
+    font-family: var(--font-family-primary);
+    color: var(--color-gray-2);
+    font-size: var(--font-size-caption);
+}
+
+/* ----------------- DETAILS ----------------- */
+.section-details {
+    display: flex;
+    /* Habilitar o gap */
+    flex-direction: column;
+    /* Colocar os elementos em coluna */
+    gap: 80px;
+    /* Distância entre os elementos */
+    align-items: center;
+    /* Cuida da Horizontal (Flex-direction: Column) */
+    padding: 80px 0;
+    /* Espaçamento Interno */
+}
+
+.details-presentation {
+    display: flex;
+    /* Habilitar o gap */
+    flex-direction: column;
+    /* Colocar os elementos em coluna */
+    gap: 30px;
+    /* Distância entre os elementos */
+    text-align: center;
+    /* Colocar o texto no centro */
+}
+
+.details-presentation h2 {
+    font-size: var(--font-size-h2);
+    /* Tamanho da fonte */
+    font-family: var(--font-family-primary);
+    /* Família da fonte */
+    font-weight: var(--font-weight-h2);
+    /* Espessura da fonte */
+}
+
+.details-presentation p {
+    font-family: var(--font-family-primary);
+    /* Família da fonte */
+    font-size: var(--font-size-body);
+    /* Tamanho da fonte */
+    color: var(--color-gray-2);
+    /* Cor do texto */
+    width: 665px;
+    /* Largura */
+    margin: 0 auto;
+}
+
+.service-description {
+    display: flex;
+    /* Colocar um ao lado do outro */
+    align-items: center;
+    /* Centralizar na vertical */
+    gap: 60px;
+    /* Distância entre os elementos */
+}
+
+.content-service {
+    display: flex;
+    /* Habilitar o gap */
+    flex-direction: column;
+    /* Colocar em coluna */
+    gap: 40px;
+    /* Distância entre os elementos */
+}
+
+.service-details {
+    display: flex;
+    /* Colocar um ao lado do outro  */
+    align-items: center;
+    /* Centralizar na vertical  */
+    gap: 25px;
+    /* Distância entre os elementos  */
+}
+
+.service-details div span {
+    font-size: var(--font-size-h4);
+    /* Tamanho da fonte */
+    font-weight: var(--font-weight-h4);
+    /* Espessura da fonte */
+    font-family: var(--font-family-primary);
+    /* Família da fonte */
+}
+
+.service-details div p {
+    font-size: var(--font-size-caption);
+    /* Tamanho da fonte */
+    font-family: var(--font-family-primary);
+    /* Família da fonte */
+    color: var(--color-gray-2);
+    /* Cor do texto */
+}
+
+.content-service h3 {
+    font-size: var(--font-size-h3);
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-h3);
+    width: 420px;
+}
+
+.content-service h3 span {
+    color: var(--color-blue);
+}
+
+.content-service p {
+    color: var(--color-gray);
+    font-family: var(--font-family-primary);
+    line-height: 27px;
+    width: 445px;
+}
+
+
+/* ------------ SECTION BENEFIT ------------ */
+.section-benefit {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-benefit {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
+    padding: 60px 48px;
+    border-radius: 20px;
+}
+
+.card-benefit p {
+    width: 458px;
+}
+
+.card-benefit-secondary {
+    background-color: #F4F4F4;
+}
+
+.card-benefit h2 {
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-h3);
+    width: 365px;
+    text-align: center;
+}
+
+.card-benefit p {
+    font-family: var(--font-family-primary);
+    color: var(--color-gray);
+    text-align: center;
+    width: 458px;
+}
+
+.btn-benefit {
+    padding: 10px 35px;
+    border-radius: 10px;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    text-decoration: none;
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-button);
+}
+
+.card-benefit-primary {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+
+.card-benefit-primary p {
+    color: var(--color-white);
+}
+
+.btn-benefit-secondary {
+    background-color: var(--color-white);
+    padding: 10px 35px;
+    border-radius: 10px;
+    color: var(--color-blue);
+    text-decoration: none;
+    font-weight: var(--font-weight-button);
+    font-family: var(--font-family-primary);
+}
+
+/* ----------- Section Company ------------ */
+.section-company {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 40px;
+    padding: 80px 0;
+}
+
+.section-company h2 {
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-h2);
+    font-size: var(--font-size-h3);
+}
+
+.container-company {
+    display: flex;
+    gap: 80px;
+}
+
+/* --------------- Section Contact --------------- */
+.section-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+    padding: 140px;
+    background-color: var(--color-blue-10);
+}
+
+.section-contact h2 {
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-h2);
+    font-family: var(--font-family-primary);
+    text-align: center;
+    width: 478px;
+}
+
+.section-contact form {
+    display: flex;
+    gap: 14px;
+}
+
+.section-contact form input {
+    padding: 20px 35px;
+    border-radius: 10px;
+    width: 532px;
+    font-family: var(--font-family-primary);
+    box-shadow: 0 4px 84px 0 rgba(0, 0, 0, 0.07);
+}
+
+.section-contact form button {
+    background-color: var(--color-black);
+    padding: 20px 40px;
+    border-radius: 10px;
+    color: var(--color-white);
+    font-family: var(--font-family-primary);
+    text-transform: uppercase;
+    font-weight: var(--font-weight-button);
+}
+
+/* --------------- Footer --------------- */
+footer {
+    display: flex;
+    gap: 99px;
+    justify-content: center;
+    padding: 60px 0;
+}
+
+.footer-informations {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    font-family: var(--font-family-primary);
+}
+
+.footer-informations p {
+    font-size: var(--font-size-caption);
+    width: 268px;
+    color: #515151;
+}
+
+.footer-informations ul {
+    list-style: none;
+}
+
+.footer-informations ul li a,
+.footer-informations ul li {
+    text-decoration: none;
+    color: #515151;
+    font-size: var(--font-size-caption);
+}
+
+.footer-informations h2 {
+    font-size: var(--font-size-h4);
+    font-weight: var(--font-weight-h4);
+}
+
+.footer-socials {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.social-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    border-radius: 30px;
+    box-shadow: 0 4px 14px 0px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.social-item:hover {
+    background-color: var(--color-blue-10);
+    transform: translateY(-10px);
+}
+
+@media (max-width: 884px) {
+    main {
+        flex-direction: column-reverse;
+
+    }
+
+    main img {
+        width: 400px;
+    }
+
+    .main-content {
+        text-align: center;
+    }
+
+    .conteiner-cta {
+        justify-content: center;
+    }
+
+    .section-services {
+        grid-template-columns: (2, max-content);
+        gap: 50px 90px;
+    }
+
+    .details-presentation h2 {
+        width: 480px;
+        margin: 0 auto;
+    }
+
+    .details-presentation p {
+        width: 450px;
+
+    }
+
+    .service-description {
+        flex-direction: column;
+    }
+
+    .section-benefit {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-company {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+
+    }
+
+    footer {
+        flex-direction: column;
+        padding-left: 20px;
+        gap: 40px;
+    }
+}
+
+@media (max-widt: 480px) {
+    .container-nav-header {
+        display: none;
+
+    }
+
+    main img {
+        width: 280px;
+
+    }
+
+    .main-content h1 {
+        font-size: var(--font-size-h2);
+        width: 435px;
+        margin: 0 auto;
+
+    }
+
+    .main-content p {
+
+        width: 375px;
+        margin: 0 auto;
+    }
+
+    .section-services {
+
+        grid-template-columns: max-content;
+    }
+
+    .section-details h2 {
+        width: 360px;
+        font-size: var(--font-size-h3);
+
+    }
+
+    .details-presentation p{
+        width: 360px;
+
+    }
+
+    .service-details{
+        width: 300px;
+    }
+
+    .card-benefit p{
+        width: 300px;
+    }
+
+    .section-contact form imput {
+        width: 300px;
+    }
+
+}
