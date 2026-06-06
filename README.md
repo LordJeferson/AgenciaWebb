@@ -50,7 +50,7 @@ AgencyWeb é um projeto desenvolvido durante o curso de Desenvolvimento Web Fron
 <!-- EXEMPLO DE LAYOUT: -->
 ## 🎨 Layout
 
-![Web1](https://github.com/LordJeferson/AgencyWeb/blob/main/Thumb_agenciaWeb.svg)
+![Web1](https://github.com/LordJeferson/AgenciaWebb/blob/main/src/assets/images/Thumb_agenciaWeb.svg)
 
 ---
 
